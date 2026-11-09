@@ -3,7 +3,7 @@
 
 /* A full-screen entrance, ending at the category navigation. */
 header{height:90px}
-.hero{min-height:calc(100svh - 162px);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:45px 24px 35px;background-size:100% 100%;max-width:none}
+.hero{min-height:calc(100svh - 162px);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:45px 24px 35px;background-image:url('assets/boho/entrance-extended.png');background-size:cover;max-width:none}
 .hero-logo{width:clamp(210px,29svh,330px);height:auto;margin:0 auto 30px}
 .hero h1{margin:auto 0 0;font-size:clamp(90px,15svh,150px);line-height:1.1}
 nav .nav-inner{min-height:72px;align-items:center}

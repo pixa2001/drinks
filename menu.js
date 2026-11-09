@@ -16,6 +16,8 @@ const categories = [
 ['Ron','Ein Schluck Karibik · 4 cl',[
 ['Legendarios','6,70'],['Havanna 7','6,70'],['Ron Barceló','6,70'],['Bacardi 8','6,70'],['Brugal','6,70']]]
 ];
+const categoryOrder = ['Refrescos', 'Cerveza', 'Longdrinks', 'Shots', 'Shooter', 'Vino / Cava', 'Whiskey', 'Ron'];
+categories.sort((a, b) => categoryOrder.indexOf(a[0]) - categoryOrder.indexOf(b[0]));
 const nav=document.querySelector('#nav'),menu=document.querySelector('#menu');
 categories.forEach(([name,info,items],i)=>{
  const id='kategorie-'+i;const a=document.createElement('a');a.href='#'+id;a.textContent=name;nav.append(a);

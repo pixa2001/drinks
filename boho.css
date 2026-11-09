@@ -13,3 +13,7 @@ nav .nav-inner{min-height:72px;align-items:center}
 .hero-logo{position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);width:min(clamp(273px,37.7svh,429px),calc(100% - 32px));height:auto;margin:0}
 @media(max-width:500px){.hero-logo{width:min(clamp(234px,40.3svh,377px),calc(100% - 32px))}}
 @media(max-height:550px) and (min-width:501px){.hero-logo{width:169px;top:42%}}
+/* Drink names use the locally hosted Bangers face. */
+.row .name{font-family:FlamencaBangers,Impact,sans-serif;font-weight:400;font-size:20px;letter-spacing:.35px;line-height:1.4}
+.row .volume{font-family:'DM Sans',sans-serif;letter-spacing:normal}
+@media(max-width:500px){.row .name{font-size:19px}}

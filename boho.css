@@ -17,3 +17,5 @@ nav .nav-inner{min-height:72px;align-items:center}
 .row .name{font-family:FlamencaBangers,Impact,sans-serif;font-weight:400;font-size:20px;letter-spacing:.35px;line-height:1.4}
 .row .volume{font-family:'DM Sans',sans-serif;letter-spacing:normal}
 @media(max-width:500px){.row .name{font-size:19px}}
+.row .price{font-family:FlamencaBangers,Impact,sans-serif;font-weight:400;font-size:20px;letter-spacing:.35px}
+@media(max-width:500px){.row .price{font-size:19px}}

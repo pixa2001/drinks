@@ -487,10 +487,6 @@ const categories = [
     "",
     [
       [
-        "Cubo – 5 Bier für 4",
-        "Nicht angegeben"
-      ],
-      [
         "11 Kölsch Kranz",
         "30,80",
         "11 × 0,2 l"
@@ -751,6 +747,7 @@ categories.forEach(([name,info,items],i)=>{
  const section=document.createElement('section');section.className='category';section.id=id;
  section.innerHTML=`<div class="category-title"><span class="number">${String(i+1).padStart(2,'0')}</span><h2>${name}</h2></div>${info ? `<p class="section-info">${info}</p>` : ''}<div class="rows"></div>`;
  const rows=section.querySelector('.rows');items.forEach(([drink,price,volume])=>{const row=document.createElement('div');row.className='row';const n=document.createElement('span');n.className='name'+(drink==='Sangria Especial'?' special-name':'');n.textContent=drink;if(volume){const v=document.createElement('span');v.className='volume';v.textContent=volume;n.append(v)}const dots=document.createElement('span');dots.className='dots';dots.setAttribute('aria-hidden','true');const p=document.createElement('span');p.className='price';p.textContent=/^\d+,\d{2}$/.test(price)?price+' €':price;row.append(n,dots,p);rows.append(row)});
+ if(name==='Cerveza')section.insertAdjacentHTML('beforeend','<aside class="callout"><div><b>¡Cubito!</b><p>5 zum Preis von 4<br>(Estrella / Corona / Desperados)</p></div><span class="star" aria-hidden="true">✦</span></aside>');
  menu.append(section);
 });
 const titles=[...document.querySelectorAll('.category-title')];let previous=scrollY,ticking=false;

@@ -19,3 +19,9 @@ nav .nav-inner{min-height:72px;align-items:center}
 @media(max-width:500px){.row .name{font-size:19px}}
 .row .price{font-family:FlamencaBangers,Impact,sans-serif;font-weight:400;font-size:20px;letter-spacing:.35px}
 @media(max-width:500px){.row .price{font-size:19px}}
+
+/* Jimdo uses a bounded entrance so a taller iframe reveals more drinks. */
+.embedded .hero{height:540px;min-height:0;padding:30px 24px}
+.embedded .hero-logo{width:280px;max-width:calc(100% - 40px);top:49%}
+.embedded .hero h1{font-size:90px}
+@media(max-width:500px){.embedded .hero{height:480px;padding:24px 20px}.embedded .hero-logo{width:260px;top:46%}.embedded .hero h1{font-size:80px}}
